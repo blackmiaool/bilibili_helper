@@ -41,9 +41,6 @@
 
     }
 
-
-//    GM_registerMenuCommand("Hello, world (simple)", helloSimple);
-
     register("隐藏消息红点", "显示消息红点",defaultOpen, "hideMsg", function () {
         var style = ".i_menu_community_msg_btn .num" +
             "{display:none !important;opacity:0 !important;} ";
@@ -63,10 +60,6 @@
             "{height:initial !important;min-height:initial !important;}";
 
         $("#index_container>.container-row .b-l .b-head-i+.b-head-t").after('<button class="slide-btn">收起</button>');
-
-        function helloSimple() {
-            log("hellol");
-        }
 
         var id;
         var $row;
