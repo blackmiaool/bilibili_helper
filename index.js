@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            bilibili_helper
-// @version         0.1
+// @version         0.2
 // @description     Improve user experience of bilibili.
 // @author          blackmiaool
 // @match           http://www.bilibili.com/
@@ -42,7 +42,7 @@
     }
 
     register("隐藏消息红点", "显示消息红点",defaultOpen, "hideMsg", function () {
-        var style = ".i_menu_community_msg_btn .num" +
+        var style = "#i_menu_community_msg_btn .num" +
             "{display:none !important;opacity:0 !important;} ";
         return {
             style: style
