@@ -3,7 +3,7 @@
 // @version         0.2
 // @description     Improve user experience of bilibili.
 // @author          blackmiaool
-// @match           http://www.bilibili.com/
+// @match           http://www.bilibili.com/*
 // @grant           GM_addStyle
 // @grant           GM_setValue
 // @grant           GM_getValue
