@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name            bilibili_helper
+// @namespace    http://tampermonkey.net/
 // @version         0.2
 // @description     Improve user experience of bilibili.
 // @author          blackmiaool
