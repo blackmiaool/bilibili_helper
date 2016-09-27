@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            bilibili_helper
-// @namespace    http://tampermonkey.net/
+// @namespace       http://tampermonkey.net/
 // @version         0.2
 // @description     Improve user experience of bilibili.
 // @author          blackmiaool
@@ -18,11 +18,12 @@
     var log = GM_log;
     var slideRows = GM_getValue("slideRows") || {};
     var initStyle = "";
-    var defaultOpen=true;
-    var defaultClost=true;
-    function register(doTip, cancelTip,defaultState, name, onStart, onChange) {
-        if(GM_getValue(name)==undefined){
-            GM_setValue(name,defaultState)
+    var defaultOpen = true;
+    var defaultClost = true;
+
+    function register(doTip, cancelTip, defaultState, name, onStart, onChange) {
+        if (GM_getValue(name) == undefined) {
+            GM_setValue(name, defaultState)
         }
         if (GM_getValue(name)) {
             var result = onStart();
@@ -42,7 +43,7 @@
 
     }
 
-    register("隐藏消息红点", "显示消息红点",defaultOpen, "hideMsg", function () {
+    register("隐藏消息红点", "显示消息红点", defaultOpen, "hideMsg", function () {
         var style = "#i_menu_community_msg_btn .num" +
             "{display:none !important;opacity:0 !important;} ";
         return {
@@ -52,7 +53,7 @@
         location.reload();
     });
 
-    register("开启折叠功能", "关闭折叠功能",defaultOpen, "slide", function () {
+    register("开启折叠功能", "关闭折叠功能", defaultOpen, "slide", function () {
         var style = ".slide-btn" +
             "{margin-top:5px;font-size: 10px;padding: 2px;position: absolute;left: -32px;top: 6px;margin: auto;}" +
             ".container-row .b-l .b-body" +
